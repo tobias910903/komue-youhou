@@ -22,15 +22,11 @@ btn.onclick = function(){
 
 // 请求一个接口
 $_request( {
-    url: "https://api.juejin.cn/recommend_api/v1/article/recommend_cate_feed",
-    data: {
-        "id_type": 2,
-        "sort_type": 200,
-        "cate_id": "6809637767543259144",
-        "cursor": "0",
-        "limit": 20
-    }
+    url: "http://localhost:3000/api/test",
+    data: { }
 }, ()=> {
     console.log("接口成功回调")
+}, ()=>{
+    console.log("接口调用失败")
 })
 
